@@ -1,14 +1,13 @@
 use chrono::NaiveDateTime;
 use diesel::prelude::*;
 use uuid::Uuid;
-
 use crate::cp_schema::*;
 
 #[derive(Queryable, Debug)]
 #[diesel(table_name = companies)]
 pub struct Company {
     pub id: Uuid,
-    pub entity_id: Uuid,
+    pub entity_id: Uuid, // supplier, customer or vendor
     pub name: String,
     pub contact_person: Uuid,
     pub active: bool,
@@ -34,19 +33,19 @@ pub struct Customer {
 #[derive(Queryable, Eq, PartialEq, Insertable, Debug)]
 #[diesel(table_name = customer_groups)]
 pub struct CustomerGroup {
-    pub id: Uuid,
-    pub customer_group: String,
-    pub created_at: NaiveDateTime,
-    pub updated_at: NaiveDateTime,
+    id: Uuid,
+    customer_group: String,
+    created_at: NaiveDateTime,
+    updated_at: NaiveDateTime,
 }
 
 #[derive(Selectable, Queryable, Debug)]
 #[diesel(table_name = customer_status)]
 pub struct CustomerStatus {
-    pub id: Uuid,
-    pub status: String,
-    pub created_at: NaiveDateTime,
-    pub updated_at: NaiveDateTime,
+    id: Uuid,
+    status: String,
+    created_at: NaiveDateTime,
+    updated_at: NaiveDateTime,
 }
 
 #[derive(Queryable, Debug)]

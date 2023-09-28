@@ -8,6 +8,7 @@ use crate::cp_schema::{customer_groups, customer_status};
 use crate::establish_connection;
 
 impl CustomerGroup {
+
     pub async fn new(s: String) -> Result<Self, Box<dyn Error>> {
         let conn = &mut establish_connection();
 

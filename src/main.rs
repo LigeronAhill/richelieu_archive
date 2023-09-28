@@ -8,6 +8,7 @@ use crate::cp_model::CustomerGroup;
 mod cp_funcs;
 mod cp_model;
 mod cp_schema;
+mod models;
 
 #[tokio::main]
 async fn main() {

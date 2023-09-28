@@ -1,0 +1,1 @@
+DROP SCHEMA smm CASCADE;
