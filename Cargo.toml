@@ -16,3 +16,12 @@ tokio-diesel = "0.3.0"
 r2d2 = "0.8.10"
 dotenvy = "0.15.7"
 serde_derive = "1.0.188"
+#rocket = {version = "0.5.0-rc.3", features = ["json"]}
+anyhow = "1.0.75"
+#[dependencies.rocket_dyn_templates]
+#features = ["handlebars"]
+#
+#[dependencies.rocket_contrib]
+#version = "0.4.11"
+#default-features = false
+#features = ["json"]
