@@ -10,6 +10,9 @@ uuid = {version = "1.4.1", features = ["v4"]}
 chrono = "0.4.19"
 tokio = {version = "1.32.0", features = ["full"]}
 diesel = {version = "2.1.2", features = ["postgres", "r2d2", "chrono", "uuid"]}
-dotenv = "0.15.0"
 serde = {version = "1.0.188", features = ["derive"]}
 serde_json = "1.0.107"
+tokio-diesel = "0.3.0"
+r2d2 = "0.8.10"
+dotenvy = "0.15.7"
+serde_derive = "1.0.188"
